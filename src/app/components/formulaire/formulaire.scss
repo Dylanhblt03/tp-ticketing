@@ -1,0 +1,92 @@
+$couleur-primaire: #42414d;
+$couleur-texte: #2d3436;
+$ombre-douce: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+body {
+  height: 100%;
+}
+.ensemble {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/045/889/959/non_2x/abstract-wavy-background-blue-and-orange-background-abstract-blue-color-wallpaper-for-desktop-abstract-curvy-orange-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 50px;
+  min-height: 100vh;
+  .carte {
+    background: #f3f3f3;
+    opacity: 95%;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: $ombre-douce;
+
+    .titre {
+      color: $couleur-texte;
+      font-weight: 800;
+      margin-bottom: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .text-un {
+      color: #062ca7;
+    }
+    .text-deux {
+      color: #ec8004;
+    }
+
+    .form-label {
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+      color: lighten($couleur-texte, 20%);
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .form-control,
+    .form-select {
+      border: 2px solid #edf2f7;
+      border-radius: 10px;
+      padding: 12px 15px;
+      transition: all 0.3s ease;
+
+      &:focus {
+        border-color: $couleur-primaire;
+        box-shadow: 0 0 0 4px rgba($couleur-primaire, 0.1);
+        outline: none;
+      }
+    }
+
+    .bouton-envoyer {
+      background-color: $couleur-primaire;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px;
+      background-color: #062ca7;
+
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px;
+        background-color: #ec8004;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .ensemble {
+    padding: 30px 15px;
+
+    .carte {
+      padding: 25px;
+    }
+  } 
+  }
+

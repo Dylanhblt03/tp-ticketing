@@ -1,0 +1,38 @@
+<div class="fond-page">
+  <div class="container py-5">
+    <h2 class="titre">Vos demandes déjà envoyées</h2>
+
+    <div class="table-responsive shadow-lg rounded">
+      <table class="table champ mb-0">
+        <thead>
+          <tr>
+            <th>N°</th>
+            <th>Nom</th>
+            <th>Sujet</th>
+            <th>E-mail</th>
+            <th>Commune</th>
+            <th>Département</th>
+            <th>Région</th>
+            <th>Message</th>
+          </tr>
+        </thead>
+        @for (demande of mesDemandes; track demande.id) {
+          <tr>
+            <td class="text-muted">{{ demande.id }}</td>
+            <td class="fw-bold">{{ demande.nom }}</td>
+            <td>{{ demande.sujet }}</td>
+            <td>{{ demande.email }}</td>
+            <td>{{ demande.commune }}</td>
+            <td>{{ demande.departement }}</td>
+            <td>{{ demande.region }}</td>
+            <td class="message">{{ demande.message }}</td>
+          </tr>
+        } @empty {
+          <tr>
+            <td colspan="8" class="text-center py-4">Aucune demande trouvée.</td>
+          </tr>
+        }
+      </table>
+    </div>
+  </div>
+</div>

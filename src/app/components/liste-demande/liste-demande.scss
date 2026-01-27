@@ -1,0 +1,34 @@
+body {
+  height: 100%;
+}
+.fond-page {
+  background: url('https://static.vecteezy.com/system/resources/previews/045/889/959/non_2x/abstract-wavy-background-blue-and-orange-background-abstract-blue-color-wallpaper-for-desktop-abstract-curvy-orange-background-free-vector.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.titre {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.champ {
+  background: rgb(255, 255, 255);
+
+  thead th {
+    background-color: #fcfcfc;
+    color: #ff9901;
+    border-bottom: 2px solid #0011ff;
+    padding: 12px 15px;
+    font-size: 18px;
+  }
+  tr td {
+    padding: 15px;
+  }
+}
